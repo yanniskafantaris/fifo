@@ -166,7 +166,7 @@ func openFifo(ctx context.Context, fn string, flag int, perm os.FileMode) (*fifo
 			})
 			return
 		}
-		// Resize fifo to 1024K
+		//Resize fifo to 1024K
 		unix.FcntlInt(file.Fd(), fsetPipeSize, fifoSize)
 
 		f.file = file
