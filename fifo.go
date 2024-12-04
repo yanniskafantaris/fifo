@@ -46,7 +46,7 @@ type fifo struct {
 const (
 	fsetPipeSize = 1031       // F_SETPIPE_SZ
 	fgetPipeSize = 1032       // F_GETPIPE_SZ
-	fifoSize     = 1024 * 256 // FIFO_SIZE
+	fifoSize     = 1024 * 128 // FIFO_SIZE
 )
 
 var leakCheckWg *sync.WaitGroup
