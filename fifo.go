@@ -44,9 +44,9 @@ type fifo struct {
 
 // Sizes here match what's defined in the kernel; for more info see https://github.com/torvalds/linux/commit/ff9da691c0498ff81fdd014e7a0731dab2337dac
 const (
-	fsetPipeSize = 1031        // F_SETPIPE_SZ
-	fgetPipeSize = 1032        // F_GETPIPE_SZ
-	fifoSize     = 1024 * 1024 // FIFO_SIZE
+	fsetPipeSize = 1031       // F_SETPIPE_SZ
+	fgetPipeSize = 1032       // F_GETPIPE_SZ
+	fifoSize     = 1024 * 256 // FIFO_SIZE
 )
 
 var leakCheckWg *sync.WaitGroup
